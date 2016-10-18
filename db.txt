@@ -1,0 +1,10 @@
+create database newsdb;
+
+create table news(
+ id int unsigned not null auto_increment primary key,
+ title varchar(64) not null,
+ keywords varchar(64) not null,
+ author varchar(16) not null,
+ addtime int unsigned not null,
+ content text not null
+ );
